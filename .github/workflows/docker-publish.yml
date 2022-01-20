@@ -38,7 +38,7 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
       - name: Remove Aliyun mirror
-        run: sed '/mirrors.aliyun.com/d' Dockerfile
+        run: sed -i '/mirrors.aliyun.com/d' Dockerfile
 
       - name: Build and push Docker image
         id: build-and-push
