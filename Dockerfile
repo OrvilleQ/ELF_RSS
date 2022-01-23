@@ -4,6 +4,6 @@ RUN python3 -m pip config set global.index-url https://mirrors.aliyun.com/pypi/s
 
 COPY . /app/
 
-RUN python3 -m pip install --use-deprecated=legacy-resolver -r requirements.txt
+RUN python3 -m pip install -r requirements.txt
 
 CMD nb run
