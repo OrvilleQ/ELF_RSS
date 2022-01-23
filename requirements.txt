@@ -20,3 +20,4 @@ tenacity~=7.0.0
 bbcode~=1.1.0
 tinydb~=4.5.1
 arrow~=1.2.0
+urllib3==1.26.7
